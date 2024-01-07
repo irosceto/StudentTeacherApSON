@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "514331138225",
+    "firebase_url": "https://student-teacher-app-f1485-default-rtdb.firebaseio.com",
+    "project_id": "student-teacher-app-f1485",
+    "storage_bucket": "student-teacher-app-f1485.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514331138225:android:95c96c7ab290eadbc62a90",
+        "android_client_info": {
+          "package_name": "com.example.student_teacherapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCvDvw_1bWJPmfei2wCTsTAfj1XRGp6nk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
