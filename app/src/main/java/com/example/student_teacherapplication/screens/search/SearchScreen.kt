@@ -139,8 +139,6 @@ fun SearchScreenContent(
                 Text(text = "Make an appointment", fontSize = 16.sp)
             }
 
-            Spacer(modifier = Modifier.height(8.dp))
-
 
         }
     }
