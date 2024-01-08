@@ -141,15 +141,7 @@ fun SearchScreenContent(
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            Button(onClick = { /*TODO*/ }, modifier = Modifier.fillMaxWidth()) {
-                Text(text = "Video call", fontSize = 16.sp)
-            }
 
-            Spacer(modifier = Modifier.height(8.dp))
-
-            Button(onClick = { /*TODO*/ }, modifier = Modifier.fillMaxWidth()) {
-                Text(text = "Chat", fontSize = 16.sp)
-            }
         }
     }
 }
