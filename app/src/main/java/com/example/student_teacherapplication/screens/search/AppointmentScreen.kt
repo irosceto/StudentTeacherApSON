@@ -53,7 +53,7 @@ fun AppointmentScreen(viewModel: MainViewModel, navigateToComments: () -> Unit) 
                 .padding(horizontal = 8.dp)
         ) {
             Image(
-                painter = painterResource(id = R.drawable.resim),
+                painter = painterResource(id = R.drawable.yeditepe),
                 contentDescription = null,
                 modifier = Modifier
                     .size(64.dp)
