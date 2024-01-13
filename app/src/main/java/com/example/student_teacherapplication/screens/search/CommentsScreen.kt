@@ -31,21 +31,21 @@ import com.example.student_teacherapplication.R
 import com.example.student_teacherapplication.components.ProfileImage
 import com.example.student_teacherapplication.screens.MainViewModel
 
-//rastgele yorum lsitesi
+//rastgele yorum listesi
 val names = listOf(
-    "Elif", "Selim", "Sinan", "Sinem", "Beril", "Metin"
+    "Berfin", "İrem", "Deniz", "Sinem", "Can", "Metin"
 )
 val friendMessages = listOf(
-    "How's everybody doing today?",
+    "This teacher is very kind and helpful.",
     "I've been meaning to chat!",
-    "When do we hang out next? 😋",
+    "Your lesson planning is very organized and understandable.\n This was very helpful for me.😋",
     "We really need to catch up!",
     "It's been too long!",
-    "I can't\nbelieve\nit! 😱",
-    "Did you see that ludicrous\ndisplay last night?",
-    "We should meet up in person!",
-    "How about a round of pinball?",
-    "I'd love to:\n🍔 Eat something\n🎥 Watch a movie, maybe?\nWDYT?"
+    "This teacher is not \npunctual at all\n! 😱",
+    "We are grateful for your interest and support in our problems.",
+    "A very rude teacher...",
+    "The greatest teacher!",
+    "This teacher patiently answered \nall the questions I asked.\n"
 )
 
 @Composable
@@ -57,7 +57,7 @@ fun CommentsScreen(viewModel: MainViewModel) {
             .padding(horizontal = 8.dp, vertical = 8.dp)
     ) {
         Image(
-            painter = painterResource(id = R.drawable.resim),
+            painter = painterResource(id = R.drawable.yeditepe),
             contentDescription = null,
             modifier = Modifier
                 .size(100.dp)
