@@ -37,14 +37,14 @@ val names = listOf(
 )
 val friendMessages = listOf(
     "This teacher is very kind and helpful.",
-    "I've been meaning to chat!",
+    "Thank you for helping me reduce my stress.",
     "Your lesson planning is very organized and understandable.\n This was very helpful for me.😋",
     "We really need to catch up!",
-    "It's been too long!",
+    "You gave me a lot of support regarding the exams.",
     "This teacher is not \npunctual at all\n! 😱",
     "We are grateful for your interest and support in our problems.",
     "A very rude teacher...",
-    "The greatest teacher!",
+    "The greatest teacher!!",
     "This teacher patiently answered \nall the questions I asked.\n"
 )
 
