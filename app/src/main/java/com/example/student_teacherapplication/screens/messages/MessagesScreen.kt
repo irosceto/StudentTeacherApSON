@@ -22,7 +22,7 @@ import androidx.compose.ui.unit.sp
 
 
 val names = listOf(
-    "Berfin", "İrem", "Deniz", "Sinem", "Can", "Metin"
+    "Yağmur", "Burak", "Deniz", "Cansu", "Can", "Emre"
 )
 val friendMessages = listOf(
     "How's everybody doing today?",
