@@ -1,7 +1,7 @@
 package com.example.student_teacherapplication.navigation
 
 
-// login signup gibi en üst seviye dolaşılan navigasyon ekranları
+
 sealed class MainDirection(
     protected val appScreen: AppScreen
 ) {

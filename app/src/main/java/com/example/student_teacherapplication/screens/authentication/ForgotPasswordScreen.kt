@@ -21,7 +21,7 @@ import com.example.student_teacherapplication.R
 import com.example.student_teacherapplication.components.TextPasswordField
 import com.example.student_teacherapplication.screens.MainViewModel
 
-// şifremi unuttum ekranı
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ForgotPasswordScreen(

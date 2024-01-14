@@ -11,7 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 
-// login sign up gibi form olan ya ekranlarda göstermek üzere loading dialog
+
 @Composable
 fun LoadingDialog() {
     BackHandler {}

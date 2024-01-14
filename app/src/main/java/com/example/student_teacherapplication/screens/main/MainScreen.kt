@@ -46,7 +46,7 @@ fun MainScreen(
     var title by remember { mutableStateOf("") }
     var canPop by remember { mutableStateOf(false) }
 
-    // kullanıcının bulunduğu ekrana göre appbar da bulunan back buttonun gizlenip gösterilmesi ayarların
+
     DisposableEffect(navController) {
         val listener = NavController.OnDestinationChangedListener { controller, _, _ ->
             val isOnTopScreen = when (navController.currentDestination?.route) {

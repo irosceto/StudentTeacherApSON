@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 
-//api isteği atılan tüm ekranlarda göstermek için tek tip bir hata componenti
+
 @Composable
 fun ErrorComponent(tryAgain: () -> Unit) {
     Column {

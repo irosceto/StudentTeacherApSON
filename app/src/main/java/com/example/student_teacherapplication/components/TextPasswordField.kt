@@ -24,7 +24,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 
 
-//sign in ve signup da kullanılmak üzere kod tekrar olmaması için password textfieldi
+
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalComposeUiApi::class)
 @Composable
 fun TextPasswordField(password: String, onValueChange: (String) -> Unit) {

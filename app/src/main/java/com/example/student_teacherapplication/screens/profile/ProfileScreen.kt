@@ -41,7 +41,7 @@ import com.example.student_teacherapplication.screens.ProfileScreenState
 
 @Composable
 fun ProfileScreen(viewModel: MainViewModel, onSignOut: () -> Unit) {
-    // ekran ilk açıldığında kullanıcı bilgileri çağırılır
+
     LaunchedEffect(Unit) {
         viewModel.getUser()
     }

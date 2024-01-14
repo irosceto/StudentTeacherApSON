@@ -14,7 +14,7 @@ import com.example.student_teacherapplication.screens.authentication.SignUpScree
 import com.example.student_teacherapplication.screens.splash.SplashScreen
 
 
-// en üst seviye navigasyon ekranlarının tanımlandığı component navigation yapısı
+
 @Composable
 fun MainNavGraph(
     navController: NavHostController,

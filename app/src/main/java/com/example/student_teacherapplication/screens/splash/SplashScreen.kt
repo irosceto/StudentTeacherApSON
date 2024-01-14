@@ -15,7 +15,7 @@ import com.example.student_teacherapplication.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.delay
 
-//uygulama ilk açıldığında splash gössterilir eğer mevcutta giriş yapan kullanıcı varsa ana ekrana yoksa login ekranına yönlendirilir
+
 @Composable
 fun SplashScreen(navigateToSignIn: () -> Unit, navigateToHome: () -> Unit) {
     LaunchedEffect(key1 = Unit) {

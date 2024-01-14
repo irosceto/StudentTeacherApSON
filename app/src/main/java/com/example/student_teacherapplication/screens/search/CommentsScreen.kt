@@ -31,9 +31,9 @@ import com.example.student_teacherapplication.R
 import com.example.student_teacherapplication.components.ProfileImage
 import com.example.student_teacherapplication.screens.MainViewModel
 
-//rastgele yorum listesi
+
 val names = listOf(
-    "Berfin", "İrem", "Deniz", "Sinem", "Can", "Metin"
+    "İrem", "Berfin", "Sinan", "Sinem", "Beril", "Metin"
 )
 val friendMessages = listOf(
     "This teacher is very kind and helpful.",
@@ -57,7 +57,7 @@ fun CommentsScreen(viewModel: MainViewModel) {
             .padding(horizontal = 8.dp, vertical = 8.dp)
     ) {
         Image(
-            painter = painterResource(id = R.drawable.yeditepe),
+            painter = painterResource(id = R.drawable.userprofile),
             contentDescription = null,
             modifier = Modifier
                 .size(100.dp)

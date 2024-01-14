@@ -23,7 +23,7 @@ import com.example.student_teacherapplication.screens.search.CommentsScreen
 import com.example.student_teacherapplication.screens.search.SearchScreen
 
 
-// ana ekranımızda bulunan bottom navigation componenti
+
 @Composable
 fun NavigationHost(
     viewModel: MainViewModel,

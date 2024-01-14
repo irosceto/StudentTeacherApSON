@@ -18,7 +18,7 @@ import coil.compose.AsyncImage
 import com.example.student_teacherapplication.R
 
 
-//profil ekranı ve öğretmen appointment ekranlarında kullanılan profil alanını tek tip kullanmak için profil image componenti
+
 @Composable
 fun ProfileImage(
     imageBitmap: Bitmap? = null,
@@ -40,9 +40,9 @@ fun ProfileImage(
     } ?: run {
         AsyncImage(
             model = url,
-            error = painterResource(id = R.drawable.irem), // error olmasi durumunda gosterilecek fotografi burdan degisitirn
+            error = painterResource(id = R.drawable.yeditepe),
             contentDescription = null,
-            placeholder = painterResource(id = R.drawable.irem), // fotograf yuklenirken gosterilecek gecici fotografi buradan degistirin
+            placeholder = painterResource(id = R.drawable.yeditepe),
             contentScale = ContentScale.FillBounds,
             modifier = modifier
         )

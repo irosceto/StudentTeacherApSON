@@ -35,7 +35,7 @@ import java.util.Calendar
 
 @Composable
 fun HomeScreen(viewModel: MainViewModel) {
-    //ekran açıldığında bir kere kullanıcı görüşmeleri çağırılır
+
     LaunchedEffect(key1 = Unit) {
         viewModel.getUsersAppointments()
     }

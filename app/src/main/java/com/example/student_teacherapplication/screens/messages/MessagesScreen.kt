@@ -20,21 +20,22 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-//rastgele isim ve mesaj listesi
+
 val names = listOf(
     "Berfin", "İrem", "Deniz", "Sinem", "Can", "Metin"
 )
 val friendMessages = listOf(
-    "This teacher is very kind and helpful.",
+    "How's everybody doing today?",
     "I've been meaning to chat!",
-    "Your lesson planning is very organized and understandable.\n This was very helpful for me.😋",
+    "When do we hang out next? 😋",
     "We really need to catch up!",
     "It's been too long!",
-    "This teacher is not \npunctual at all\n! 😱",
-    "We are grateful for your interest and support in our problems.",
-    "A very rude teacher...",
-    "The greatest teacher!",
-    "This teacher patiently answered \nall the questions I asked.\n"
+    "I can't\nbelieve\nit! 😱",
+    "Did you see that ludicrous\ndisplay last night?",
+    "We should meet up in person!",
+    "How about a round of pinball?",
+    "I'd love to:\n🍔 Eat something\n🎥 Watch a movie, maybe?\nWDYT?"
+
 )
 
 @Composable

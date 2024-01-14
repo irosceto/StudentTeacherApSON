@@ -15,7 +15,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 
 
-// search ekranında kullanılmak üzere tekrar tekrar yazmamak adına dropdown menü oluşturduk
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CustomDropdownMenu(
