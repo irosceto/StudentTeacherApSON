@@ -24,26 +24,25 @@ class MainViewModel : ViewModel() {
     private val firestore = FirebaseFirestore.getInstance()
     private val storage = FirebaseStorage.getInstance()
 
-    //activityde kullanılan global parametreler
+
     var showLoadingDialog by mutableStateOf(false)
     var globalMessage: String? by mutableStateOf(null)
 
-    //home, profil ve search ekranlarında bulunan componentlerin belirlendiği state parametreleri
+
     var homeScreenState: HomeScreenState by mutableStateOf(HomeScreenState.Loading)
     var profileScreenState: ProfileScreenState by mutableStateOf(ProfileScreenState.Loading)
     var searchScreenState: SearchScreenState by mutableStateOf(SearchScreenState.Loading)
 
-    //firebaseden gelen değerlerin sonradna kullanılması adına tutulduğu parametreler
+
     var lessons: List<LessonModel>? = null
     var appointments: List<AppointmentModel>? = null
     var teachers: QuerySnapshot? = null
     var selectedTeacher: DocumentSnapshot? = null
 
-    // appointment ekranında gösterilen tarih kutularının tarihlerinin parametreleri
+
     var showDates by mutableStateOf(false)
     val dates: ArrayList<Long> = arrayListOf()
 
-    // kullanıcı appointment ekranına geldiğinde sabah 9 dan akşam 5 e kadar iki saat arayla saat listeleri olutşuran method
     private fun setDates() {
         dates.clear()
         val calendar = Calendar.getInstance()
@@ -61,7 +60,7 @@ class MainViewModel : ViewModel() {
         showDates = true
     }
 
-    // kullanıcının profil fotoğrafını firebase e yüklediği method
+
     fun updateProfilePicture(picture: Uri) {
         showLoadingDialog = true
         try {
@@ -82,7 +81,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    // kullanıcının appointment ekranında tıkladığı tarih kutusunun firebase de databse e kaaydedildiği alan
+
     fun makeReservation(dateTime: Long) {
         showDates = false
         showLoadingDialog = true
@@ -107,7 +106,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    //kullanıcının ana ekranda listelenecek görüşmelerinin çağırıldığı kod
+
     fun getUsersAppointments() {
         homeScreenState = HomeScreenState.Loading
         try {
@@ -130,7 +129,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    // appointment ekranında öğretmenin görüşmelerinin çağırıldığı kod
+
     fun getTeachersAppointments() {
         showDates = false
         try {
@@ -152,7 +151,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    // arama ekranında kayıtlı derslerin çağırıldığı method
+
     fun getLessons() {
         lessons = null
         teachers = null
@@ -175,7 +174,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    // seçilen derse göre onları veren öğretmenin çağırıldığı kod
+
     fun getTeachers(teacherIds: List<String>) {
         showLoadingDialog = true
         try {
@@ -201,7 +200,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    // profile ekranında giriş yapan kullanıcının bilgilerinin çağırıldığı kod
+
     fun getUser() {
         profileScreenState = ProfileScreenState.Loading
         try {
@@ -221,7 +220,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    // kullanıcının login ekranında giriş yaptığı kod
+
     fun signIn(
         email: String?,
         password: String?,
@@ -335,7 +334,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    // kullanıcının fotoğrafını firebase storage a yükledikten sonra firestoreda kullanıcı fotoğraf linkinin kaydedildiği kod
+
     private fun saveUserImage(url: String) {
         val user = mapOf(
             "pictureUrl" to url,
@@ -354,7 +353,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    //profil ekranında kulanıcının çıkış yaptığı kod
+
     fun signOut() {
         auth.signOut()
     }

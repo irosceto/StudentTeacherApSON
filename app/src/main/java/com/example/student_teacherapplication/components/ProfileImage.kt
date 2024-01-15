@@ -40,9 +40,9 @@ fun ProfileImage(
     } ?: run {
         AsyncImage(
             model = url,
-            error = painterResource(id = R.drawable.yeditepe),
+            error = painterResource(id = R.drawable.userprofile),
             contentDescription = null,
-            placeholder = painterResource(id = R.drawable.yeditepe),
+            placeholder = painterResource(id = R.drawable.userprofile),
             contentScale = ContentScale.FillBounds,
             modifier = modifier
         )

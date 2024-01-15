@@ -80,7 +80,7 @@ fun ProfileScreenContent(
     val bitmap = remember { mutableStateOf<Bitmap?>(null) }
     val context = LocalContext.current
 
-    //kullanıcı profil fotoğrafına tıkladığında fotoğraf seçimi başarıyla geçerkleşitse içindeki atama ile profil fotoğrafı güncelleniyor
+
     val launcher = rememberLauncherForActivityResult(
         contract =
         ActivityResultContracts.GetContent()
