@@ -39,7 +39,7 @@ fun SignUpScreen(viewModel: MainViewModel, navigateToHomeScreen: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center
     ) {
         Image(
-            painter = painterResource(id = R.drawable.logo), // "your_logo" dosya adını belirtin
+            painter = painterResource(id = R.drawable.logo),
             contentDescription = "Logo",
             modifier = Modifier
                 .fillMaxWidth()
